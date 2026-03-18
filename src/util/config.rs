@@ -633,8 +633,8 @@ fn parse_section_line(captures: Captures, state: &SplitState) -> Result<SplitLin
         return Ok(SplitLine::Section(section));
     }
 
-    let mut start = None;
-    let mut end = None;
+    let start = None;
+    let end = None;
     let mut section = SplitSection {
         name: captures["name"].to_string(),
         start: None,

@@ -51,7 +51,7 @@ pub struct ObjUnit {
     pub comment_version: Option<u8>,
     /// Influences the order of this unit relative to other ordered units.
     pub order: Option<i32>,
-    // Used to link a file that is not extracted (ie adding new TUs)
+    // Used to link a file that is not extracted (ie adding new TUs that don't exist in the original binary)
     pub link_only_sections: Vec<String>,
 }
 
